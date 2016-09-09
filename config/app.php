@@ -184,6 +184,12 @@ return [
         Caffeinated\Modules\ModulesServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        'YAAP\Theme\ThemeServiceProvider',
+        Zizaco\Entrust\EntrustServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
+        'Creativeorange\Gravatar\GravatarServiceProvider',
+        Tylercd100\LERN\LERNServiceProvider::class,
+        "Libern\SqlLogging\SqlLoggingServiceProvider",
 
     ],
 
@@ -237,6 +243,13 @@ return [
          */
         'Module' => Caffeinated\Modules\Facades\Module::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'aliases' => array('Theme' => 'YAAP\Theme\Facades\Theme'),
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'role' => \Zizaco\Entrust\Middleware\EntrustRole::class,
+        'permission' => \Zizaco\Entrust\Middleware\EntrustPermission::class,
+        'ability' => \Zizaco\Entrust\Middleware\EntrustAbility::class,
+        'Gravatar' => 'Creativeorange\Gravatar\Facades\Gravatar',
+        "LERN" => "Tylercd100\LERN\Facades\LERN",
     ],
 
 ];

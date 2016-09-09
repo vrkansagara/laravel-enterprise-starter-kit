@@ -2,6 +2,39 @@
 
 
 
+
+
+### TODO List
+
+-[] Add AdminLTE as backend theme with converting all the static page into dynamic
+-[] Add theme console command to create html form with model and basic controller. 
+-[] Add Role and Permission
+-[] Add Route with permission management.
+-[] Add error handling and store it into database
+-[] Add module manager for various functionality.
+-[] Add militant database based on each module.
+
+
+### External Library Used to make this kit
+
+- [ THEME MANAGER ](https://github.com/yaapis/Theme)
+- [ MODULE MANAGER ](https://github.com/caffeinated/modules)
+- [ ROLE BASED PERMISSIONS  ](https://github.com/zizaco/entrust)
+- [ IDE HELPER ](https://github.com/zizaco/entrust)
+- [ EASY FLASH NOTIFICATIONS ](https://github.com/laracasts/flash)
+- [ HTML AND FORM BUILDERS ](https://github.com/LaravelCollective/html)
+- [ LARAVEL REPOSITORIES ](https://github.com/bosnadev/repository)
+- [ GRAVATAR IMAGE URL ](https://github.com/creativeorange/gravatar)
+- [ EXCEPTIONS INTO A DATABASE  ](https://github.com/tylercd100/lern)
+- [ PERSISTENT SETTINGS  ](https://github.com/arcanedev/settings)
+- [ FAKE DATA GENERATOR ](https://github.com/fzaninotto/faker)
+
+Development Helper Library
+- [ IDE Helper Generator ](https://github.com/zizaco/entrust)
+- [ Laravel Debugbar ](https://github.com/barryvdh/laravel-debugbar)
+--------------------------
+
+
 #### Licence
 
 Copyright (c) 2016, Vallabh Kansagara
