@@ -66,13 +66,13 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
-    @if (Route::has('login') && !isset(Auth::user()->name))
+    @if (Route::has('login') && !Auth::check())
         <div class="top-right links">
             <a href="{{ url('/login') }}">Login</a>
             <a href="{{ url('/register') }}">Register</a>
         </div>
     @endif
-    @if(isset(Auth::user()->name))
+    @if(Auth::check())
         <div class="top-right links">
             <a href="#">{{Auth::user()->name}}</a>
             <a href="{{ url('/logout') }}">Logout</a>
