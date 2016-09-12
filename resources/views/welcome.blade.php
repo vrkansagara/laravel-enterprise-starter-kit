@@ -75,15 +75,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {!! env('APP.LONG_NAME') !!}
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://centralbos.com/" target="_blank">Home</a>
+                    <a href="https://mycbos.com/" target="_blank">Application Login</a>
+                </div>
+
+                <div>
+                    {!! env('APP.TAG_LINE') !!}
                 </div>
             </div>
         </div>
