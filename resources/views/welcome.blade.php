@@ -75,10 +75,7 @@
     @if(Auth::check())
         <div class="top-right links">
             <a href="#">{{Auth::user()->name}}</a>
-            <a href="{{ url('/logout') }}"
-               onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                Logout
-            </a>
+            <a href="{{ url('/logout') }}" onclick="logout(this,event)">Logout </a>
             <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}
             </form>
@@ -100,5 +97,13 @@
         </div>
     </div>
 </div>
+<script>
+    function logout(t, e) {
+        e.preventDefault();
+        if (confirm('Are you sure you want to loggout?')) {
+            document.getElementById('logout-form').submit();
+        }
+    }
+</script>
 </body>
 </html>
