@@ -34,6 +34,9 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        if(!empty(env('APP.HOME_ROUTE'))){
+            $this->redirectTo = '/'.env('APP.HOME_ROUTE');
+        }
         $this->middleware('guest', ['except' => 'logout']);
     }
 }
