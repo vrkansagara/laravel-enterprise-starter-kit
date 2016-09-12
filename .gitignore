@@ -27,3 +27,5 @@ _*.php
 composer.lock
 
 
+/var/logs/*.*
+.composer.json.un~
